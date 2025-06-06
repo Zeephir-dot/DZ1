@@ -183,3 +183,51 @@ body {
     font-size: 14px;
   }
 }
+@media (max-width: 768px) {
+  .carousel nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .carousel nav h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .carousel nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .featured-products h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .product-box {
+    width: 140px;
+    min-width: 140px;
+  }
+
+  .product-name {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 13px;
+  }
+
+  .cart-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+}
+.carousel nav h1 {
+  font-size: clamp(20px, 5vw, 35px);
+}
+

@@ -1,0 +1,185 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel nav {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px 30px 0px;
+    align-items: center;
+}
+
+.carousel .block {
+    width: 100%;
+    background: rgb(0, 174, 255);
+    height: 40px;
+}
+
+.carousel nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+.carousel nav h1 {
+    font-weight: bolder;
+    font-size: 35px;
+    color: rgb(100, 100, 100);
+
+}
+
+.carousel nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.carousel nav ul li a {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 40px;
+    margin: 0;
+}
+
+.featured-products {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.featured-products h2 {
+    text-align: start;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* или flex-start для выравнивания влево */
+    align-items: flex-start;
+    gap: 30px;
+    /* отступы между карточками */
+    flex-wrap: wrap;
+    /* запрет на перенос */
+    overflow-x: auto;
+    /* добавит горизонтальный скролл при нехватке места */
+    padding-bottom: 20px;
+    /* чуть ниже отступ */
+}
+
+.product-box {
+    background-color: #f5f5f5;
+    border: 7px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    background-color: #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+}
+
+.product-image img {
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.product-info {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.price {
+    color: #8bc34a;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.cart-icon {
+    background-color: #8bc34a;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart-icon i {
+    display: flex;
+    padding: 10px;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .products {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 0 10px;
+  }
+
+  .product-box {
+    width: 160px;
+    min-width: 160px;
+  }
+
+  .product-name {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .cart-icon {
+    padding: 3px;
+    font-size: 14px;
+  }
+}
